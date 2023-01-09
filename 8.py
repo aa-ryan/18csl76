@@ -23,7 +23,6 @@ kn.fit(X_train, y_train)
 for i in range(len(X_test)):
   x_new = np.array([X_test[i]])
   prediction = kn.predict(x_new)
-  print("Actual:[{0}] [{1}],Predicted:{2} {3}".format(y_test[i], targets[y_test[i]], prediction,
-targets[prediction])) 
+  print("Actual:[{0}] [{1}],Predicted:{2} {3}".format(y_test[i], targets[y_test[i]], prediction, targets[prediction])) 
 print("\nAccuracy:",kn.score(X_test,y_test))
 
